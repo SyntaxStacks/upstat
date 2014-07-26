@@ -1,0 +1,15 @@
+{
+    "name": "opon",
+    "version": "0.0.0",
+    "description": "Open source task tracking",
+    "main": "server.js",
+    "scripts": {
+      "test": "test"
+    },
+    "author": "John Lozano",
+    "license": "ISC",
+    "dependencies": {
+        "express": "4.6.1",
+        "lodash": "2.4.1"
+    }
+}
