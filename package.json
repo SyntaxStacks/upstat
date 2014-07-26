@@ -4,13 +4,15 @@
     "description": "Open source task tracking",
     "main": "server.js",
     "scripts": {
-      "test": "test"
+      "test": "mocha -t 20000 "
     },
     "author": "John Lozano",
     "license": "ISC",
     "dependencies": {
         "express": "4.6.1",
-        "lodash": "2.4.1"
+        "lodash": "2.4.1",
+        "mongoose": "3.8.13",
+        "moment": "2.7.0"
     },
     "devDependencies": {
         "mocha": "1.21.0",
