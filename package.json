@@ -11,5 +11,10 @@
     "dependencies": {
         "express": "4.6.1",
         "lodash": "2.4.1"
+    },
+    "devDependencies": {
+        "mocha": "1.21.0",
+        "chai": "1.9.1",
+        "request": "2.39.0"
     }
 }
