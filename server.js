@@ -1,16 +1,7 @@
-var _ = require('lodash');
-var express = require('express');
-var app = express();
+var server = require('./lib/server');
 
-var port = 3000;
 var routes = [
-    './api/hello'
+    'hello'
 ];
 
-_.each(routes, function (route) {
-    var rt = require(route);
-    rt(app);
-});
-
-console.log('Running server on port: ' + port );
-app.listen(port);
+server(routes).start();
