@@ -4,7 +4,7 @@
     "description": "Open source task tracking",
     "main": "server.js",
     "scripts": {
-      "test": "mocha -t 20000 "
+      "test": "mocha -t 10000 -r ./test/bootstrap.js './test/**/*.js'"
     },
     "author": "John Lozano",
     "license": "ISC",
@@ -12,11 +12,15 @@
         "express": "4.6.1",
         "lodash": "2.4.1",
         "mongoose": "3.8.13",
-        "moment": "2.7.0"
+        "moment": "2.7.0",
+        "async": "*",
+        "body-parser": "*"
     },
     "devDependencies": {
         "mocha": "1.21.0",
         "chai": "1.9.1",
+        "sinon": "*",
+        "sinon-chai": "*",
         "request": "2.39.0"
     }
 }

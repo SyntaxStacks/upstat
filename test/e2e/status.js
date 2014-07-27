@@ -1,15 +1,18 @@
-var expect = require('chai').expect;
+var moment = require('moment');
 var server = require('../../lib/server');
 var api = require('../api-helper')(); 
 var db = require('../../lib/db');
-var app = server(['hello']); 
+var app = server(['status']); 
 var Status = require('../../lib/models/status');
 
 describe('Status Feature', function () {
 
     before(function () {
-        db.initialize(config);
         app.start();
+    });
+
+    after(function () {
+        app.stop();  
     });
 
     it('should create a status', function (done) {
