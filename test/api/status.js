@@ -26,7 +26,6 @@ describe('Status API', function () {
             body: JSON.stringify(newStatus)
         };
 
-        sinon.stub(Status, 'save');
         api(createStatusEndpoint, function (err, res, body) {
             console.log(err);
             console.log(res);
