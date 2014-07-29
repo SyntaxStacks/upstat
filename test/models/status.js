@@ -24,7 +24,7 @@ describe('Status Model', function () {
 
     it('should create a status', function (done) {
         var newStatus = getNewStatus(); 
-        var statusModel = new Status(newStatus);
+        var statusModel = Status.create(newStatus);
         statusModel.save(function (err, status) {
             expect(err).to.not.exist;
             expect(status).to.exist;
@@ -35,7 +35,7 @@ describe('Status Model', function () {
     it('should retrive a status', function (done) {
         var newStatus = getNewStatus(); 
         var createStatus = function (callback) {
-            var statusModel = new Status(newStatus);
+            var statusModel = Status.create(newStatus);
             statusModel.save(callback);
         };
         var findStatus = function (callback, results) {
@@ -57,7 +57,7 @@ describe('Status Model', function () {
     it('should modify a status', function (done) {
         var newStatus = getNewStatus(); 
         var createStatus = function (callback) {
-            var statusModel = new Status(newStatus);
+            var statusModel = Status.create(newStatus);
             statusModel.save(callback);
         };
         var findStatus = function (callback, results) {
@@ -87,7 +87,7 @@ describe('Status Model', function () {
     it('should remove a status', function (done) {
         var newStatus = getNewStatus(); 
         var createStatus = function (callback) {
-            var statusModel = new Status(newStatus);
+            var statusModel = Status.create(newStatus);
             statusModel.save(callback);
         };
         var findStatus = function (callback, results) {
