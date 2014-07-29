@@ -1,8 +1,9 @@
 var server = require('./lib/server');
 
 var routes = [
-    'hello',
-    'status'
+    'status',
+    'user',
+    'team'
 ];
 
 server(routes).start();
