@@ -1,6 +1,7 @@
 {
     "name": "opon",
     "version": "0.0.0",
+    "private": true,
     "description": "Open source task tracking",
     "main": "server.js",
     "scripts": {
