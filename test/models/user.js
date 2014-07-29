@@ -19,7 +19,7 @@ describe('User Model', function () {
             username: 'testuser' + moment().valueOf(),
             passwordHash: 'test user' + moment().valueOf()
         };
-        var userModel = new User(newUser);
+        var userModel = User.create(newUser);
         userModel.save(function (err, user) {
             expect(err).to.not.exist;
             expect(user).to.exist;
@@ -33,7 +33,7 @@ describe('User Model', function () {
             passwordHash: 'test user' + moment().valueOf()
         };
         var createUser = function (callback) {
-            var userModel = new User(newUser);
+            var userModel = User.create(newUser);
             userModel.save(callback);
         };
         var findUser = function (callback, results) {
@@ -58,7 +58,7 @@ describe('User Model', function () {
             passwordHash: 'test user' + moment().valueOf()
         };
         var createUser = function (callback) {
-            var userModel = new User(newUser);
+            var userModel = User.create(newUser);
             userModel.save(callback);
         };
         var findUser = function (callback, results) {
@@ -91,7 +91,7 @@ describe('User Model', function () {
             passwordHash: 'test user' + moment().valueOf()
         };
         var createUser = function (callback) {
-            var userModel = new User(newUser);
+            var userModel = User.create(newUser);
             userModel.save(callback);
         };
         var findUser = function (callback, results) {
