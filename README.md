@@ -1,8 +1,7 @@
-opon
+upstat
 ====
 
 Open source task tracker
-
 
 ## dependencies
 npm install
